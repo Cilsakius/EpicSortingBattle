@@ -4,9 +4,6 @@ import matplotlib
 def insertionSort(ind):
     list = ind.copy()
     varNumb = 0
-    listcheck = 1
-    bool = True
-    #length = int(len(list))
     while varNumb != len(list)-1:
         var = list[varNumb]
         nextVar = list[varNumb+1]
@@ -23,13 +20,30 @@ def insertionSort(ind):
             varNumb += 1
     print(list)
 
+def selectionSort(ind):
+    list = ind.copy()
+    varNumb = 0
+    donePos = 0
+    minVarPos = 0
+    length = int(len(list))
+    minVar = list[varNumb]
+    bool = True
+    while donePos != len(list)-1:
+        nextVar = list[varNumb+1]
+        if minVar > nextVar:
+            minVar = nextVar
+            varNumb += 1
+            minVarPos = varNumb
+        else:
+            varNumb += 1
+        if varNumb == len(list)-1:
+            list.pop(minVarPos)
+            list.insert(donePos, minVar)
+            donePos += 1
+            varNumb = donePos
+            minVar = list[donePos]
+    print(list)
 
-
-
-
-
-def selectionSort():
-    pass
 
 def bubbleSort(ind):
     list = ind.copy()
@@ -57,5 +71,11 @@ def bubbleSort(ind):
 def mergeSort():
     pass
 
-x=["z","b","b","A","x"]
-insertionSort(x)
+def timSort(ind):
+    #hvis man nu var rigtigt doven kunne man bare bruge pythons inbyggede sort()
+    list = ind.copy()
+    list.sort()
+    print(list)
+
+x=["1","5","2","3","3"]
+selectionSort(x)
