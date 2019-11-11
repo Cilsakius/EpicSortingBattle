@@ -57,5 +57,5 @@ def bubbleSort(ind):
 def mergeSort():
     pass
 
-x=["3","3","5","2"]
+x=["z","b","b","A","x"]
 insertionSort(x)
