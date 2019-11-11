@@ -34,8 +34,5 @@ def bubbleSort(ind):
                 bool = False
                 print(list)
 
-
-    print(list)
-
 def mergeSort():
     pass
