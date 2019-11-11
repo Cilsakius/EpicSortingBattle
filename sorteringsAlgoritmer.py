@@ -1,8 +1,28 @@
 #import testcase0
 import matplotlib
 
-def insertionSort():
-    pass
+def insertionSort(ind):
+    list = ind.copy()
+    varNumb = 0
+    listcheck = 1
+    bool = True
+    #length = int(len(list))
+    while varNumb != len(list)-1:
+        var = list[varNumb]
+        nextVar = list[varNumb+1]
+        if var > nextVar:
+            list.pop(varNumb)
+            list.insert(varNumb+1, var)
+            backVarNumb = varNumb
+            varNumb += 1
+            while nextVar < list[backVarNumb-1] and backVarNumb != 0:
+                list.pop(backVarNumb)
+                list.insert(backVarNumb-1, nextVar)
+                backVarNumb -= 1
+        else:
+            varNumb += 1
+    print(list)
+
 
 
 
@@ -36,3 +56,6 @@ def bubbleSort(ind):
 
 def mergeSort():
     pass
+
+x=["3","3","5","2"]
+insertionSort(x)
