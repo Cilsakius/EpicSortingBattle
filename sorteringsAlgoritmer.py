@@ -1,4 +1,3 @@
-#import testcase0
 import matplotlib
 
 def insertionSort(ind):
@@ -33,8 +32,8 @@ def insertionSort(ind):
         else:
             varNumb += 1
             #varnumb bliver 1 større
-    print(list)
-    #print den færdigsorterede liste
+    return(list)
+    #retunerer den færdigsorterede liste
 
 def selectionSort(ind):
     list = ind.copy()
@@ -76,8 +75,8 @@ def selectionSort(ind):
             #definer Varnumb som donePos
             minVar = list[donePos]
             #definer minvar som elementet i listen på donesPos's plads
-    print(list)
-    #printer listen
+    return(list)
+    #Retunerer listen
 
 
 def bubbleSort(ind):
@@ -118,8 +117,8 @@ def bubbleSort(ind):
             #hvis længden af listen - listcheck == 0
                 bool = False
                 #gør bool falsk
-                print(list)
-                #print listen
+                return(list)
+                #retunerer listen
 
 def mergeSort(ind):
     pass
@@ -129,4 +128,4 @@ def timSort(ind):
     #hvis man nu var rigtigt doven kunne man bare bruge pythons inbyggede sort()
     list = ind.copy()
     list.sort()
-    print(list)
+    return(list)
