@@ -121,7 +121,25 @@ def bubbleSort(ind):
                 #retunerer listen
 
 def mergeSort(ind):
-    pass
+    list = ind.copy()
+    #Herover defineres en liste som en kopi af den liste der er en parameter
+    varNumb = 0
+    #vi definerer variablen varNumb til 0
+    listcheck = 1
+    #vi definerer variablen listcheck til 1
+    bool = True
+    listAmmount = round(len(list)/2, 2)
+    while bool != False:
+        for x in len(list):
+            list+varNumb = list.copy()
+            varNumb += 1
+            print(varNumb)
+        while listAmmount < len(list+varNumb):
+            list+varnumb.pop(listAmmount)
+            listAmmount += 1
+
+
+
 
 
 def timSort(ind):
@@ -129,3 +147,6 @@ def timSort(ind):
     list = ind.copy()
     list.sort()
     return(list)
+
+x=[0,a,A,0,A,h,a,g,d,0,B]
+mergeSort(x)
