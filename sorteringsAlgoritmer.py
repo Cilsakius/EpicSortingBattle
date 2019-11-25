@@ -33,7 +33,11 @@ def insertionSort(ind):
             varNumb += 1
             #varnumb bliver 1 større
     return(list)
+<<<<<<< Updated upstream
     #retunerer den færdigsorterede liste
+=======
+    #print den færdigsorterede liste
+>>>>>>> Stashed changes
 
 def selectionSort(ind):
     list = ind.copy()
@@ -76,7 +80,11 @@ def selectionSort(ind):
             minVar = list[donePos]
             #definer minvar som elementet i listen på donesPos's plads
     return(list)
+<<<<<<< Updated upstream
     #Retunerer listen
+=======
+    #printer listen
+>>>>>>> Stashed changes
 
 
 def bubbleSort(ind):
@@ -118,7 +126,11 @@ def bubbleSort(ind):
                 bool = False
                 #gør bool falsk
                 return(list)
+<<<<<<< Updated upstream
                 #retunerer listen
+=======
+                #print listen
+>>>>>>> Stashed changes
 
 def mergeSort(ind):
     pass
